@@ -28,7 +28,8 @@ if ($peaceorwar == 1) {
     my $doorchoice = <STDIN>;
 
     if ($doorchoice == 1) {
-        print "The chief gets angry at you for not being invited, but he doesn't get too angry.\nThe chief warns you that if you screw up 1 more time, he will kick you out of the Marae.\n";
+        $screwedup = 1;
+        print "The chief gets angry at you for not being invited, but he doesn't get too angry.\nThe chief hints that you might be kicked out of the Marae.\n";
     } elsif ($doorchoice == 2) {
         print "The tribe happily welcomes you to their marae.\n";
     } else {
